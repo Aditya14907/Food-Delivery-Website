@@ -1,0 +1,61 @@
+.explore-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.explore-menu h1{
+    color: black;
+    font-weight: 500;
+}
+.explore-menu-text{
+    /* font-weight: 400;
+    font-size: 25px; */
+    max-width: 60%;
+    columns: #808080;
+    /* color: black; */
+}
+.explore-menu-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 20px 0px;
+    overflow-x: scroll; /*It is used for scroll as there are many items it will scroll on x-axis*/
+}
+.explore-menu-list::-webkit-scrollbar{
+    /*If we don't use this then there will be scroll will be shown on x-axis*/
+    display: none;
+}
+.explore-menu-list-items img{
+        width: 9vw;
+        min-width: 80px;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: 0.3s;
+}
+.explore-menu-list-items p{
+    margin-top: 10px;
+    color: #747474;
+    font-size: 1.4vw;
+    cursor: pointer;
+}
+.explore-menu hr{
+    margin: 10px 0px; /*this means 10px on top and bottom for left and right 0px*/
+    height: 3px;
+    background-color: #e2e2e2;
+    border: none;
+}
+.explore-menu-list-items .active{
+    border: 4px solid red;
+    padding: 1.5px;
+}
+@media (max-width:1050px) {
+    .explore-menu-text{
+        max-width: 100%;
+        font-size: 15px;
+    }
+    .explore-menu-list p{
+        font-size: 15px;
+    }
+}
